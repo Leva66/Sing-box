@@ -8,7 +8,17 @@
       {"clash_mode":"Global","action":"route","outbound":"GLOBAL"},
 ```
 
-前面时，就算全局代理时也会走直连。
+就算全局代理时也会走**直连**，**DNS 层面的** **`server: ali`** **和路由层面的** **`outbound: 🇨🇳 China`** **是两回事**。最好让同一个自定义规则集同时出现在 DNS 和 `route.rules` 中，这样 `cnma.top` 就能做到：
+
+```
+example.com
+   │
+   ├── DNS → ali
+   │
+   └── 流量 → 🇨🇳 China
+```
+
+而且即使你切到 `Global`，只要它在 `clash_mode: Global` 前面，仍然可以强制走 China。
 
 2. `"dns"`-`"rules"`要指定走哪个DNS
 
