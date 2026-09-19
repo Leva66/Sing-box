@@ -39,7 +39,7 @@ example.com
 
 ```bash
     "rule_set": [
-      {"tag":"Custom_Rules","type":"remote","format":"source","url":"https://git.cnma.top/https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/main/rules/fakeipfilter-cn.json","initial_path":"/etc/sing-box/rule-set/geosite-fakeipfilter-cn.json","update_interval": "12h"},
+      {"tag":"Custom_Rules","type":"remote","format":"source","url":"https://git.cnma.top/[https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/main/rules/fakeipfilter-cn.json](https://raw.githubusercontent.com/Leva66/Sing-box/refs/heads/main/Custom_Rules.json)","initial_path":"/etc/sing-box/rule-set/geosite-fakeipfilter-cn.json","update_interval": "12h"},
 
 ```
 
