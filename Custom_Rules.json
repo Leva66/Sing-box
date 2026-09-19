@@ -1,0 +1,14 @@
+{
+  "version": 5,
+  "rules": [
+    {
+      "domain_suffix": [
+        "cnma.top",
+        "deepseek.com",
+        "moonshot.cn",
+        "kimi.cn"
+
+      ]
+    }
+  ]
+}
