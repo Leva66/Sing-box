@@ -38,8 +38,8 @@ example.com
 3. `"route"-"rule_set"`里面的`"format: "source"` 就是告诉 sing-box 这个远程文件是 JSON source rule-set，而不是 `.srs` 二进制规则集。
 
 ```bash
-    "rule_set": [
-      {"tag":"Custom_Rules","type":"remote","format":"source","url":"https://git.cnma.top/[https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/main/rules/fakeipfilter-cn.json](https://raw.githubusercontent.com/Leva66/Sing-box/refs/heads/main/Custom_Rules.json)","initial_path":"/etc/sing-box/rule-set/geosite-fakeipfilter-cn.json","update_interval": "12h"},
+        "rule_set": [
+      {"tag":"Custom_Rules","type":"remote","format":"source","url":"https://git.cnma.top/https://raw.githubusercontent.com/Leva66/Sing-box/refs/heads/main/Custom_Rules.json","initial_path":"/etc/sing-box/rule-set/Custom_Rules.json","update_interval": "12h"},
 
 ```
 
